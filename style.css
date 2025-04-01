@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .container{
@@ -31,13 +32,14 @@
     padding: 0px 20px;
     border-radius: 5px 5px;
     border: none;
-    background-color: rgb(6, 6, 150);
-    color: white;
+    border: 1px gray solid ;
+    color: black;
     font-size: medium;
+    font-weight: bold;
 }
 
 #create:hover{
-    background-color: rgb(0, 47, 255);
+    box-shadow: 0px 2px gray;
     color: black;
 }
 
@@ -52,11 +54,35 @@
 #hex-btns{
     width: 800px;
     height: 400px;
-    background-color: white;
+    border: 1px gray solid ;
+    overflow-y: auto;
+    padding: 20px;
+
+    /* try grid here*/
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 #bg-display{
     width: 400px;
     height: 400px;
-    background-color: white;
+    border: 1px gray solid ;
+}
+
+.color-btn{
+    width: 130px;
+    height: 125px;
+    border-radius: 5px 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.color-btn:hover{
+    box-shadow: 2px 2px black;
+    cursor: pointer;
 }
